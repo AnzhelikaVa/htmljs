@@ -2,21 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>JS + HTML</title>
-    <link href="styles.css" rel="stylesheet" type="text/css"
+    <title>My project</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
-
 <body>
-<tytle>Calculator</tytle>
-<br>
-
-
-
-
-
-
-    <button onclick="sayHello()">Say hello<button>
-    <script src="scripts.js" type="application/javascript"></script>
+<table border="1">
+    <tr>
+        <td colspan="4"><P>CALCULATOR</P></td>
+    </tr>
+    <tr>
+        <td colspan="4"><input type="text" onkeyup="printAmount()" id="amount"></td>
+    </tr>
+    <BR>
+    <tr>
+    <p style="text-align: center;">
+        <td><button class="button" onClick="clearAmount()">CE</button></td>
+        <td><button class="button-C">C</button></td>
+        <td><button class="button-+/-">+/-</button></td>
+        <td><button class="button-:">:</button></td>
+</p>
+    </tr>
+<BR>
+    <tr>
+<p style="text-align: center;">
+        <td><button class="button-7">7</button></td>
+        <td><button class="button-8">8</button></td>
+        <td><button class="button-9">9</button></td>
+        <td><button class="button-x">x</button></td>
+</p>
+    </tr>
+<BR>
+    <tr>
+<p style="text-align: center;">
+        <td><button class="button-4">4</button></td>
+        <td><button class="button-5">5</button></td>
+        <td><button class="button-6">6</button></td>
+        <td><button class="button--">-</button></td>
+</p>
+    </tr>
+<BR>
+    <tr>
+<p style="text-align: center;">
+        <td><button class="button-1">1</button></td>
+        <td><button class="button-2">2</button></td>
+        <td><button class="button-3">3</button></td>
+        <td><button class="button-+">+</button></td>
+</p>
+    </tr>
+<BR>
+    <tr>
+<p style="text-align: center;">
+        <td><button class="button-%">%</button></td>
+        <td><button class="button-0">0</button></td>
+        <td><button class="button-.">.</button></td>
+        <td><button class="button-=">=</button></td>
+</p>
+    </tr>
+</table>
 </body>
+    <script src="scripts.js" type="application/javascript"></script>
 </html>

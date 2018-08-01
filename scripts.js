@@ -1,5 +1,3 @@
-function sayHello() {
-    const title = document.getElementsByTagName('h1');
-    console.log(title[0]);
-
+function clear() {
+    document.getElementById('amount').value = '_';
 }
