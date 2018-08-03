@@ -17,7 +17,6 @@ button {
 }
 table {
     width: 300px;
-    position:fixed;
     left:400px;
     top:100px;
     border-collapse: separate;
