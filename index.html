@@ -12,33 +12,33 @@
         <td colspan="4"><P>CALCULATOR</P></td>
     </tr>
     <tr>
-        <td colspan="4"><input type="text" onkeyup="printAmount()" id="amount"></td>
+        <td colspan="4"><input type="text" id="display" readonly></td>
     </tr>
     <BR>
     <tr>
     <p style="text-align: center;">
-        <td><button class="button" onClick="clearAmount()">CE</button></td>
-        <td><button class="button-C">C</button></td>
-        <td><button class="button-+/-">+/-</button></td>
-        <td><button class="button-:">:</button></td>
+        <td><button onClick="clearAmount()">CE</button></td>
+        <td><button onClick="clearLastDigit">C</button></td>
+        <td><button onclick="operand('+')">+</button></td>
+        <td><button onclick="operand('/')">/</button></td>
 </p>
     </tr>
 <BR>
     <tr>
 <p style="text-align: center;">
-        <td><button onclick="digit()">7</button></td>
-        <td><button onclick="digit()">8</button></td>
-        <td><button onclick="digit()">9</button></td>
-        <td><button class="button-x">x</button></td>
+        <td><button onclick="digit(7)">7</button></td>
+        <td><button onclick="digit(8)">8</button></td>
+        <td><button onclick="digit(9)">9</button></td>
+        <td><button onclick="operand('*')">*</button></td>
 </p>
     </tr>
 <BR>
     <tr>
 <p style="text-align: center;">
-        <td><button onclick="digit()">4</button></td>
-        <td><button onclick="digit()">5</button></td>
-        <td><button onclick="digit()">6</button></td>
-        <td><button class="button--">-</button></td>
+        <td><button onclick="digit(4)">4</button></td>
+        <td><button onclick="digit(5)">5</button></td>
+        <td><button onclick="digit(6)">6</button></td>
+        <td><button onclick="operand('-')">-</button></td>
 </p>
     </tr>
 <BR>
@@ -47,16 +47,16 @@
         <td><button onclick="digit(1)">1</button></td>
         <td><button onclick="digit(2)">2</button></td>
         <td><button onclick="digit(3)">3</button></td>
-        <td><button onclick="digit()">+</button></td>
+        <td><button onclick="operand('+')">+</button></td>
 </p>
     </tr>
 <BR>
     <tr>
 <p style="text-align: center;">
-        <td><button class="button-%">%</button></td>
-        <td><button onclick="digit()">0</button></td>
-        <td><button class="button-.">.</button></td>
-        <td><button class="button-=">=</button></td>
+        <td><button onclick="operand('%')">%</button></td>
+        <td><button onclick="digit(0)">0</button></td>
+        <td><button onclick="operand('.')">.</button></td>
+        <td><button onclick="getResult()">=</button></td>
 </p>
     </tr>
 </table>
